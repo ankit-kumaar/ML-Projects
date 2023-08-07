@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Candy Shop</h1>
+    <form id="candyForm">
+        <label for="candyName">Candy Name:</label>
+        <input type="text" id="candyName" required>
+        <br>
+        <label for="description">Description:</label>
+        <textarea id="description" rows="3" required></textarea>
+        <br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" step="0.01" required>
+        <br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+        <br>
+        <button type="button" id="addItem">Add Item</button>
+    </form>
+
+    <div id="candyDetails" class="hidden">
+        <h2>Item Details</h2>
+        <p><strong>Candy Name:</strong> <span id="detailName"></span></p>
+        <p><strong>Description:</strong> <span id="detailDescription"></span></p>
+        <p><strong>Price:</strong> $<span id="detailPrice"></span></p>
+        <p><strong>Quantity:</strong> <span id="detailQuantity"></span></p>
+        <button id="buy1">BUY 1</button>
+        <button id="buy2">BUY 2</button>
+        <button id="buy3">BUY 3</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
